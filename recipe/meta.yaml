@@ -25,7 +25,7 @@ requirements:
     - python
     - thriftpy2
     - tblib
-    - llvmlite>=0.29
+    - llvmlite >=0.29
     - numba
     - netifaces
 
