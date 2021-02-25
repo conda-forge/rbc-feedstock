@@ -1,12 +1,14 @@
 {% set name = "rbc" %}
 {% set version = "0.5.1" %}
+{% set pypi_name = "rbc-project"}
+{% set bundle = "tar.gz"}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/xnd-project/{{ name }}/archive/v{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ pypi_name[0] }}/{{ pypi_name }}/{{ pypi_name }}-{{ version }}.{{ bundle }}
   sha256: 65c488c35285135a52b7de987f064ca8ecad30df9b9d81f055c12fe0e58fbedd
 
 build:
