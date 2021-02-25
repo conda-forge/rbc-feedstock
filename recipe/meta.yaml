@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ pypi_name[0] }}/{{ pypi_name }}/{{ pypi_name }}-{{ version }}.{{ bundle }}
-  sha256: 65c488c35285135a52b7de987f064ca8ecad30df9b9d81f055c12fe0e58fbedd
+  sha256: f20984c120cf31dc31d9f5c6aef1f826cf5ca342569b21b008effd5394934a21
 
 build:
   number: 2
