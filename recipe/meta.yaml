@@ -1,7 +1,7 @@
 {% set name = "rbc" %}
 {% set version = "0.5.1" %}
-{% set pypi_name = "rbc-project"}
-{% set bundle = "tar.gz"}
+{% set pypi_name = "rbc-project" %}
+{% set bundle = "tar.gz" %}
 
 package:
   name: {{ name|lower }}
