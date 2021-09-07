@@ -10,9 +10,10 @@ package:
 source:
   url: https://pypi.org/packages/source/{{ pypi_name[0] }}/{{ pypi_name }}/{{ pypi_name }}-{{ version }}.{{ bundle }}
   sha256: 1c195ca06255378b758fd6b84b95b4c1f76c8ff874044ee83d8d00d657b883e4
+
 build:
   number: 0
-  skip: true  # [py<35]
+  skip: true  # [py<37]
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -35,7 +36,7 @@ test:
   requires:
     - pytest
   commands:
-    - pytest -sv -r s --pyargs rbc
+    - pytest -sv -r s -k "not test_python_version" --pyargs rbc
   imports:
     - rbc
     - rbc.thrift
