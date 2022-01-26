@@ -19,11 +19,11 @@ build:
 requirements:
   build:
     - python
-    - cffi
   host:
     - python
     - setuptools
     - pip
+    - cffi
   run:
     - python
     - thriftpy2
