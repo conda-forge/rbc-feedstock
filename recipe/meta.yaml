@@ -8,8 +8,9 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ pypi_name[0] }}/{{ pypi_name }}/{{ pypi_name }}-{{ version }}.{{ bundle }}
-  sha256: 26a682c36387867b177fbffd167b5cd709170332c3794f2cd52108a39e573c8b
+  # url: https://pypi.org/packages/source/{{ pypi_name[0] }}/{{ pypi_name }}/{{ pypi_name }}-{{ version }}.{{ bundle }}
+  url: https://github.com/xnd-project/rbc/archive/refs/tags/v{{ version }}.{{ bundle }}
+  sha256: 0a58aac7464598cef6838e7949ebe43fc85a8901f241d423239b24c477e45fd5
 
 build:
   number: 0
@@ -20,6 +21,7 @@ requirements:
   build:
     - python
     - {{ compiler('c') }}
+    - cffi
   host:
     - python
     - setuptools
