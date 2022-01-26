@@ -20,8 +20,6 @@ build:
 requirements:
   build:
     - python
-    - {{ compiler('c') }}
-    - cffi
   host:
     - python
     - setuptools
@@ -35,6 +33,7 @@ requirements:
     - numba
     - netifaces
     - six
+    - cffi
 
 test:
   requires:
