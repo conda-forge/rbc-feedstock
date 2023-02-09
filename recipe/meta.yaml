@@ -1,5 +1,5 @@
 {% set name = "rbc" %}
-{% set version = "0.8.1" %}
+{% set version = "0.9.1" %}
 {% set pypi_name = "rbc-project" %}
 {% set bundle = "tar.gz" %}
 
@@ -8,8 +8,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ pypi_name[0] }}/{{ pypi_name }}/{{ pypi_name }}-{{ version }}.{{ bundle }}
-  sha256: 27ef00d1938e8186153867fb6f10ea2e5631db95e30677ecd9a8a556562e51b7
+  url: https://github.com/xnd-project/rbc/archive/refs/tags/v{version}.tar.gz
+  sha256: beceee52c18fd55ae2e95f62859034e41558b613a8372b0f45b80c054a26700a
 
 build:
   number: 0
