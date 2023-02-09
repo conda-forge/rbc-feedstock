@@ -1,5 +1,5 @@
 {% set name = "rbc" %}
-{% set version = "0.8.1" %}
+{% set version = "0.9.1" %}
 {% set pypi_name = "rbc-project" %}
 {% set bundle = "tar.gz" %}
 
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ pypi_name[0] }}/{{ pypi_name }}/{{ pypi_name }}-{{ version }}.{{ bundle }}
-  sha256: 27ef00d1938e8186153867fb6f10ea2e5631db95e30677ecd9a8a556562e51b7
+  sha256: a9d3acbd691f354a22e4eb3f8ec3349607cc7975c87ae06246f9aa20fecebc32
 
 build:
   number: 0
