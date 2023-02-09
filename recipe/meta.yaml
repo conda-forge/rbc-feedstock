@@ -8,7 +8,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/xnd-project/rbc/archive/refs/tags/v{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ pypi_name[0] }}/{{ pypi_name }}/{{ pypi_name }}-{{ version }}.{{ bundle }}
   sha256: beceee52c18fd55ae2e95f62859034e41558b613a8372b0f45b80c054a26700a
 
 build:
