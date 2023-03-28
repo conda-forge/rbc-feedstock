@@ -1,11 +1,11 @@
-About rbc
-=========
+About rbc-feedstock
+===================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/rbc-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/xnd-project/rbc
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/rbc-feedstock/blob/main/LICENSE.txt)
 
 Summary: RBC - Remote Backend Compiler
 
