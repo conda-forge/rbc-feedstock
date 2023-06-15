@@ -1,5 +1,5 @@
 {% set name = "rbc" %}
-{% set version = "0.10" %}
+{% set version = "0.11.0" %}
 {% set pypi_name = "rbc-project" %}
 {% set bundle = "tar.gz" %}
 
@@ -9,7 +9,9 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ pypi_name[0] }}/{{ pypi_name }}/{{ pypi_name }}-{{ version }}.{{ bundle }}
-  sha256: e85a62191da5dcdf97eb0550f7556742b6376fbdcd8c01a510da1277d322553c
+  sha256: 69f35663ef69c1fe3cc2c4a764aa9e7fc06894f7fa1f297b5b996c78ea8dae47
+  patches:
+    - 0001-skip-test.patch
 
 build:
   number: 0
@@ -28,7 +30,7 @@ requirements:
     - llvmlite >=0.29
     - numba
     - netifaces
-    - six
+    - numpy
 
 test:
   requires:

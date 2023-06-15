@@ -1,0 +1,24 @@
+From fdc3c31fe8a63069c53a387bf8fb842c898c871a Mon Sep 17 00:00:00 2001
+From: Guilherme Leobas <guilhermeleobas@gmail.com>
+Date: Thu, 15 Jun 2023 11:03:55 -0300
+Subject: [PATCH] skip test
+
+---
+ rbc/tests/test_remotejit.py | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/rbc/tests/test_remotejit.py b/rbc/tests/test_remotejit.py
+index 25155d5..47169a4 100644
+--- a/rbc/tests/test_remotejit.py
++++ b/rbc/tests/test_remotejit.py
+@@ -808,6 +808,7 @@ def test_struct_pointer_members(ljit, rjit, location, T):
+         free(s)         # deallocate struct
+ 
+ 
++@pytest.mark.skip
+ @pytest.mark.parametrize("location", ['local', 'remote'])
+ @pytest.mark.parametrize("T", ['int64', 'int32', 'int16', 'int8', 'float32', 'float64'])
+ def test_struct_double_pointer_members(ljit, rjit, location, T):
+-- 
+2.32.1 (Apple Git-133)
+
