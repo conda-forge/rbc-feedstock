@@ -157,6 +157,7 @@ Feedstock Maintainers
 =====================
 
 * [@guilhermeleobas](https://github.com/guilhermeleobas/)
+* [@pantosik](https://github.com/pantosik/)
 * [@pearu](https://github.com/pearu/)
 * [@tupui](https://github.com/tupui/)
 
