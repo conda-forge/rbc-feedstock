@@ -14,7 +14,7 @@ source:
     - 0001-skip-test.patch
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -63,3 +63,4 @@ extra:
     - pearu
     - guilhermeleobas
     - tupui
+    - pantosik
